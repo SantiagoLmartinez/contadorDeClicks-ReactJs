@@ -60,3 +60,9 @@ height: 80vh;
 .btn:last-child{
   background-color: rgb(255, 0, 13);
 }
+
+@media only screen and (max-width: 600px) {
+  .App{
+    width: 100%;
+  }
+}
