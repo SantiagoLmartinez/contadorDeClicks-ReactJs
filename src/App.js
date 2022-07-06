@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [click, setClick] = useState(0)
+
+  const handleClick = () => {
+    setClick(click + 1)
+
+  }
+
+  const handleClickRestart = () => {
+    setClick(0)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className='app-container'>
+    <h1 className='title'>Contador de clicks</h1>
+      <div className='container'>
+        <div className='contadorClicksContainer'>
+          <h2>{click}</h2>
+        </div>
+        <div className='btn-container'>
+          <button className='btn' onClick={handleClick}>Click</button>
+          <button className='btn' onClick={handleClickRestart}>Reiniciar</button>
+        </div>
+      </div>
+    </div>
+
     </div>
   );
 }
