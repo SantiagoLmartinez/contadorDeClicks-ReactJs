@@ -37,7 +37,7 @@ height: 80vh;
   margin-bottom: 10px;
 }
 .contadorClicksContainer h2{
-  font-size: 3em
+  font-size: 5rem;
 }
 
 .btn-container{
@@ -51,7 +51,7 @@ height: 80vh;
   margin-right: 20px;
   padding: 20px;
   border-radius: 20px;
-  background-color: #999;
+  background-color: rgb(56, 106, 140);
   color: #fff;
 }
 .btn:first-child{
@@ -64,5 +64,17 @@ height: 80vh;
 @media only screen and (max-width: 600px) {
   .App{
     width: 100%;
+  }
+  .contadorClicksContainer{
+    height: 70%;
+  }
+  .contadorClicksContainer h2{
+    font-size: 5rem;
+  }
+  .btn-container{
+    width: 100%;
+  }
+  .btn{
+    margin: 5px;
   }
 }
